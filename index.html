@@ -12,7 +12,7 @@
 </head>
 <body class="light-theme" aria-label="O site está utilizando o tema light" role="body">
     <header aria-label="Cabeçalho da página.">
-      <audio id="music" autoplay>
+      <audio id="music" autoplay >
         <source src="assets/musics/normal-world.mpeg" aria-details="Audio do site" />
       </audio>
       <div class="header-content">
@@ -24,7 +24,7 @@
           Vecna. Você está preparado? Então clique no botão abaixo para entrar
           no Mundo Invertido!
         </p>
-        <button id="switch-theme-button" onclick="switchTheme()">Inverter Mundos</button>
+        <button id="switch-theme-button">Inverter Mundos</button>
       </div>
 
       <div id="top-characters" class="world-characters"></div>
@@ -35,7 +35,7 @@
 
       <section id="section-inverted-world" class="container">
         <div class="section-texts">
-          <h1>O Mundo Invertido</h1>
+          <h2>O Mundo Invertido</h2>
           <p role="text">
             O Mundo Invertido parece uma cópia do nosso mundo, mas com criaturas
             horrendas, tempestades assustadoras, muita escuridão e entidades
@@ -54,14 +54,12 @@
       <section id="section-stranger-things-trailer" class="container">
         <div class="video-frame" aria-hidden="true">
           <iframe
-            width="460"
-            height="215"
-            src="https://www.youtube.com/embed/SJ9EFhQ3ANQ?controls=0"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/yTX0HxTq9wo" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="section-texts">
           <h2>Stranger Things Vol. 4</h2>
@@ -135,8 +133,5 @@
     </footer>
     
     <script type="module" src="assets/js/main.js"></script>
-    <script>
-      
-    </script>
   </body>
 </html>
