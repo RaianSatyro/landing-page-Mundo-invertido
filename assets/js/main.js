@@ -1,22 +1,26 @@
-const button = document.querySelector('#switch-theme-button');
+import { subscribeToHellFireClub } from './firebase/hellfireclub.js';
 
-function switchTheme(){
-    document.body.classList.toggle('dark-theme');
-    document.body.classList.toggle('light-theme'); 
-    
-    const theme = document.body.classList[0];
-    const music = theme === 'light-theme' ? 'normal-world.mpeg' : 'inverted-world.mpeg'
+const completName = document.getElementById('txtName');
+const userEmail = document.getElementById('txtEmail');
+const level = document.getElementById('txtLevel');
+const persona = document.getElementById('txtCharacter');
+const btnSubscribe = document.getElementById('btnSubscribe')
 
-    const audio = document.getElementById('music');
-    audio.src = `assets/musics/${music}`
-    audio.play();
-    audio.volume = 0.1
-}
 
-window.addEventListener('click', function() {
-    const audio = document.getElementById('music');
-    audio.play();
-    audio.volume = 0.1
+btnSubscribe.addEventListener('click', async () => {
+    const subscrition = {
+        nome: completName.value, 
+        email: userEmail.value,
+        level: level.value,
+        character: persona.value
+    }
+
+    const subscriptionId = await subscribeToHellFireClub(subscrition);
+    console.log(`Inscrito com Sucesso: ${subscriptionId}`)
+
+    completName.value = ''
+    userEmail.value = ''
+    level.value = ''
+    persona.value = ''
 })
 
-button.addEventListener('click', switchTheme)
