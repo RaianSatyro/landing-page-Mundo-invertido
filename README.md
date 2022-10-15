@@ -29,7 +29,8 @@ Uma jornada para quem não tem medo do desconhecido. O caminho para o Mundo Inve
     - Introdução ao Firebase
     - Integração com o Firebase
 
-<a href="https://raiansatyro.github.io/landing-page-Mundo-invertido/" target="_blank" ><h3 align="center"> Acesse a pagina </h3> </a>
+<h3 align="center"> Acesse a pagina </h3>
+<h4>https://raiansatyro.github.io/landing-page-Mundo-invertido/</h4>
 
 
 ## 🔗 Links auxiliares
